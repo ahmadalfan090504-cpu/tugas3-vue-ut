@@ -1,0 +1,78 @@
+{
+    "upbjjList": ["Jakarta", "Bandung", "Semarang", "Surabaya", "Medan", "Makassar"],
+    "ekspedisiList": [
+        { "kode": "JNE-REG", "nama": "JNE Regular" },
+        { "kode": "JNE-EXP", "nama": "JNE Express" },
+        { "kode": "POS-NEXT", "nama": "POS Kilat Khusus" }
+    ],
+    "paket": [{
+            "kodePaket": "PAKET-UT-01",
+            "namaPaket": "Paket Sistem Informasi Semester 1",
+            "harga": 450000,
+            "detail": [
+                { "kode": "MSIM4101", "judul": "Pengantar Sistem Informasi" },
+                { "kode": "MKWU4101", "judul": "Pendidikan Pancasila" }
+            ]
+        },
+        {
+            "kodePaket": "PAKET-UT-02",
+            "namaPaket": "Paket Pemrograman Web & Mobile",
+            "harga": 520000,
+            "detail": [
+                { "kode": "STSI4209", "judul": "Pemrograman Berbasis Web" },
+                { "kode": "MSIM4301", "judul": "Pemrograman Berbasis Objek" }
+            ]
+        }
+    ],
+    "stok": [{
+            "id": 1,
+            "kode": "STSI4209",
+            "judul": "Pemrograman Berbasis Web",
+            "kategori": "Pemrograman",
+            "upbjj": "Jakarta",
+            "lokasiRak": "R-01-A",
+            "harga": 120000,
+            "qty": 45,
+            "safety": 15,
+            "catatanHTML": "<strong>Status Stok:</strong> Persediaan modul sangat memadai di gudang utama UPBJJ."
+        },
+        {
+            "id": 2,
+            "kode": "MSIM4101",
+            "judul": "Pengantar Sistem Informasi",
+            "kategori": "Konsep Dasar",
+            "upbjj": "Bandung",
+            "lokasiRak": "R-02-B",
+            "harga": 85000,
+            "qty": 8,
+            "safety": 10,
+            "catatanHTML": "<span style='color:orange;'><strong>Peringatan:</strong> Jumlah stok berada di bawah batas safety stock. Memerlukan re-order.</span>"
+        },
+        {
+            "id": 3,
+            "kode": "MKWU4101",
+            "judul": "Pendidikan Pancasila",
+            "kategori": "Mata Kuliah Umum",
+            "upbjj": "Jakarta",
+            "lokasiRak": "R-03-C",
+            "harga": 60000,
+            "qty": 0,
+            "safety": 20,
+            "catatanHTML": "<span style='color:red;'><strong>BAHAYA:</strong> Stok habis total! Distribusi bahan ajar terhenti.</span>"
+        }
+    ],
+    "tracking": [{
+        "nomorDO": "DO2026-001",
+        "nim": "041234567",
+        "nama": "Ahmad Dahlan",
+        "ekspedisi": "JNE Express",
+        "kodePaket": "PAKET-UT-01",
+        "namaPaket": "Paket Sistem Informasi Semester 1",
+        "tanggalKirim": "2026-08-25",
+        "totalHarga": 450000,
+        "history": [
+            { "waktu": "2026-08-25 09:00:00", "keterangan": "Paket telah diserahterimakan ke pihak ekspedisi JNE." },
+            { "waktu": "2026-08-25 14:30:00", "keterangan": "Paket dalam perjalanan ke hub transit Jakarta." }
+        ]
+    }]
+}
